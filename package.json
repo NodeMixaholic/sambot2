@@ -1,0 +1,23 @@
+{
+  "name": "sambot2",
+  "version": "1.0.0",
+  "description": "Sambot except automated",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparksammy/sambot2.git"
+  },
+  "author": "Samuel Lord",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparksammy/sambot2/issues"
+  },
+  "homepage": "https://github.com/sparksammy/sambot2#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "perspective-api-client": "^3.1.0"
+  }
+}
