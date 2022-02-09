@@ -18,6 +18,9 @@ client.on('message', async (message) => {
 		let stringify = JSON.stringify(result)
 		let obj = JSON.parse(stringify);
 		console.log(stringify);
+		if (message.member.hasPermission('ADMINISTRATOR') || message.author.id == 304405847247814656) {
+			console.log("ADMIN/NODEMIXAHOLIC BYPASS")
+		} else {
 		if (obj.attributeScores.TOXICITY.summaryScore.value > .8) {
 			message.delete();
 			message.reply("Please don't be toxic, and no spamming too btw. :-)");
@@ -25,6 +28,8 @@ client.on('message', async (message) => {
 			message.delete();
 			message.reply("Please don't spam, and no being toxic too btw. :-)");
 		}
+		}
+		
 	} catch {
 		console.log("cant understand!")
 	}
