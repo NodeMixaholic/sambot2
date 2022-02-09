@@ -67,5 +67,12 @@ client.on('message', async (message) => {
 		message.reply("!bal, !dailydollar")
 	}
 });
+var app = express();
+app.get('/', function(req, res){
+   res.send("Bot work.");
+});
 
-client.login(config.token);
+app.listen(3000, function() {
+  client.login(config.token)
+});
+
