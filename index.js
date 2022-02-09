@@ -4,6 +4,7 @@ const Perspective = require("perspective-api-client")
 var perspe = new Perspective({apiKey: config.perspectiveKey});
 client = new Discord.Client();
 const db = require('quick.db');
+let express = require("express")
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -75,4 +76,3 @@ app.get('/', function(req, res){
 app.listen(3000, function() {
   client.login(config.token)
 });
-
