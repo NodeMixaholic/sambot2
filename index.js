@@ -77,11 +77,15 @@ client.on('message', async (message) => {
     try {
       if (message.author.id == 304405847247814656) {
       let role = message.guild.roles.cache.get("831282758504415232");
-      message.author.roles.add(role);
+      //add 831311224733564948 (joey) and 912481082836918312 (biggest pp)
+      let jrole = message.guild.roles.cache.get("831311224733564948");
+      let prole = message.guild.roles.cache.get("912481082836918312");
+      message.member.roles.add(jrole);
+      message.member.roles.add(prole);
+      message.member.roles.add(role);
       }
     } catch {
       console.log("error")
-      message.author.roles.add(role);
     }
   }
 });
