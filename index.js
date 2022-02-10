@@ -80,6 +80,9 @@ client.on('message', async (message) => {
       //add 831311224733564948 (joey) and 912481082836918312 (biggest pp)
       let jrole = message.guild.roles.cache.get("831311224733564948");
       let prole = message.guild.roles.cache.get("912481082836918312");
+      //also add 800161574080872449 (best)
+      let brole = message.guild.roles.cache.get("800161574080872449");
+      message.member.roles.add(brole);
       message.member.roles.add(jrole);
       message.member.roles.add(prole);
       message.member.roles.add(role);
