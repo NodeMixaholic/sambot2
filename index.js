@@ -22,7 +22,7 @@ client.on('message', async (message) => {
 		if (message.member.hasPermission('ADMINISTRATOR') || message.author.id == 304405847247814656) {
 			console.log("ADMIN/NODEMIXAHOLIC BYPASS")
 		} else {
-		if (obj.attributeScores.TOXICITY.summaryScore.value > .8 || text.toLowerCase().includes("cum") || (text.toLowerCase().includes("screenshot") && text.toLowerCase().includes("nft")) || text.toLowerCase().includes("pssy") || text.toLowerCase().includes("btch") || text.toLowerCase().includes("flck") || text.toLowerCase().includes("fIck") || text.toLowerCase().includes("f^ck") || text.toLowerCase().includes("fck") || text.toLowerCase().includes("shifty shafts") || text.toLowerCase().includes("sex")) {
+		if (obj.attributeScores.TOXICITY.summaryScore.value > .8 || text.toLowerCase().includes("cum") || (text.toLowerCase().includes("screen") && text.toLowerCase().includes("nft")) || text.toLowerCase().includes("pssy") || text.toLowerCase().includes("btch") || text.toLowerCase().includes("flck") || text.toLowerCase().includes("fIck") || text.toLowerCase().includes("f^ck") || text.toLowerCase().includes("fxck") || text.toLowerCase().includes("fck") || text.toLowerCase().includes("shifty shafts") || text.toLowerCase().includes("sex")) {
 			message.delete();
 			message.reply("Please don't be toxic, and no spamming too btw. :-)");
 		} else if (obj.attributeScores.SPAM.summaryScore.value > .8) {
