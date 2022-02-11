@@ -22,7 +22,7 @@ client.on('message', async (message) => {
 		if (message.member.hasPermission('ADMINISTRATOR') || message.author.id == 304405847247814656) {
 			console.log("ADMIN/NODEMIXAHOLIC BYPASS")
 		} else {
-		if (obj.attributeScores.TOXICITY.summaryScore.value > .8) {
+		if (obj.attributeScores.TOXICITY.summaryScore.value > .8 || text.includes("cum") || (text.includes("screenshot") && text.includes("nft")) || text.includes("pssy") || text.includes("btch") || text.includes("flck") || text.includes("fIck") || text.includes("f^ck") || text.includes("fck")) {
 			message.delete();
 			message.reply("Please don't be toxic, and no spamming too btw. :-)");
 		} else if (obj.attributeScores.SPAM.summaryScore.value > .8) {
